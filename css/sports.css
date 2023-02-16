@@ -1,0 +1,19 @@
+a {
+	color: #003366;
+}
+a:hover {
+	text-decoration: none;
+	color: #ff0000;
+}
+/*  */
+
+
+/* footer */
+#footer{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+.icon{
+    padding: 8px;
+}
