@@ -1,5 +1,15 @@
-#header{
-    padding:0 5px;
+.header{
+    text-align:center;
+    background-color: blue;
+}
+.news-name{
+    font-size: 3.5rem;
+    
+    color: #fff;
+    text-decoration: none;
+    font-weight:500;
+    font-family:'Times New Roman', Times, serif;
+   
 }
 /* topic bar */
 .topic-bar{
@@ -10,7 +20,11 @@
     color: white;
     padding:0 10px;
 }
-.topic-text:hover{
+.topic-text a{
+    color: white;
+    text-decoration: none;
+}
+.topic-text a:hover{
     background-color: #333;
     cursor: pointer;
 }
