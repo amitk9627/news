@@ -3,7 +3,7 @@
 }
 /* topic bar */
 .topic-bar{
-    background-color: #ccc;
+    background-color: grey;
 }
 .topic-text{
     display:inline-block;
@@ -19,6 +19,52 @@
     width: 100%;
     height: 300px;
     padding: 0 200px;
+}
+
+/* sport */
+#sport{
+    padding: 100px;
+    background-color: #ccc;
+}
+#sport a{
+    text-decoration: none;
+    color: red;
+}
+#sport a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* bussiness */
+#bussiness{
+    padding: 100px;
+    background-color: #fff;
+}
+#bussiness a{
+   text-decoration: none;
+    color:red;
+}
+#bussiness a:hover{
+    text-decoration: underline;
+     color:blue;
+ }
+
+#bussiness ul{
+    list-style: square;
+}
+
+/* international */
+#international{
+    padding: 100px;
+    background-color: #ccc;
+}
+#international a{
+    text-decoration: none;
+    color: red;
+}
+#international a:hover{
+    text-decoration: underline;
+    color:blue;
 }
 /* footer */
 *{
