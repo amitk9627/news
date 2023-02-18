@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Business News</title>
+    <link rel="stylesheet" href="buisnessnews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="script.js"> </script>
+  </head>
+  <body>
+    
+    <header>
+      
+      <a href="#"> <h1>Business News</h1></a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Finance</a>
+        <a href="#">Technology</a>
+      </nav>
+      
+
+    </header>
+
+    <div class="container">
+     <div class="main-content">  
+      
+      <a href=""><img src="buisnessnewphotos/first.jpeg" alt="google ceo picture" width="350" height="140" ></a>
+        <h2><a href="">  EXCLUSIVE: 'We will invest more in India and from India to the world,' says Google boss Sundar Pichai</a> </h2>
+
+      </div>
+    </div> 
+
+    
+        <html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>BSE/NSE Commodity,Curency Ticker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>      body,html{font-size:16px}a,a:hover{text-decoration:none}.index-nm,.md-item{text-transform:uppercase}*,::after,::before{box-sizing:border-box;padding:0;margin:0}body{font-family:'Open Sans',sans-serif!important;background-size:100%;line-height:26px;font-weight:400;-webkit-font-smoothing:antialiased}a,body{color:#000}@media (max-width:767px){body{font-size:18px;line-height:23px}}p{color:#fff;line-height:1.625rem}ul{list-style-type:none;padding:0;margin:0}a{-webkit-transition:.2s;-moz-transition:.2s;-o-transition:.2s;-ms-transition:.2s;transition:.2s}img{max-width:100%}h1,h2,h3,h4,h5,h6{font-family:'Open Sans',sans-serif;color:#000;font-weight:700}::-webkit-scrollbar{height:3px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#888}::-webkit-scrollbar-thumb:hover{background:#555}.bt-market-index{display:flex;}.ticker-container{margin-bottom:20px;border:1px solid #e2e2e2;box-shadow:0 3px 6px #00000015}.bt_mi_head{background-color:#333;width:100%;flex:0 0 150px;max-width:150px;padding:3px 20px 0;position:relative}.bt_mi_body{display:flex;overflow:auto;width:100%}.bt_mt-sponsor p{font-size:11px;line-height:13px;color:#ccc;margin-bottom:3px}.bt_mi_items{min-width:135px;position:relative;padding:7px 0 7px 28px;display: table-cell;}.bt_mi_items:last-child{margin-right:0}.bt_mi_items::after{content:'';position:absolute;right:0;top:50%;width:1px;height:42px;background:linear-gradient(180deg,#eaeaea 0,#999 51%,#eaeaea 100%) no-repeat padding-box;-webkit-transform:translatey(-50%);-ms-transform:translatey(-50%);-o-transform:translatey(-50%);transform:translatey(-50%)}.index_name{font-size:12px;line-height:14px;color:#333;font-weight:600}.index_price{font-size:16px;line-height:18px;color:#000;font-weight:900}.index_change_price{font-size:13px;line-height:14px;color:#000}.green_txt{color:#00a86e}.price_down .index-pr-change,.red_txt{color:#f01624}.bt_mt-sponsor{text-align:center;padding-top:2px}.sp-logo{line-height:0;border-radius:2px;overflow:hidden}.market_today{text-align:center;padding-top:9px}.market_today h5{font-size:12px;line-height:14px;color:#fff;margin-bottom:5px}.markte_time{font-size:16px;line-height:18px;color:#ffe200;font-weight:600}.market-index{padding-top:3px}.index-nm{font-size:12px;line-height:14px;font-weight:600;color:#fff;margin-bottom:2px}.index-price{font-size:16px;line-height:18px;font-weight:900;color:#fff;margin-bottom:1px;display:flex}.index-pr-change,.md-item{font-size:12px;line-height:14px}.price-change-icon{margin-left:5px}.drop-icon{width:20px;height:19px;display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:-10px;margin-top:-1px;cursor:pointer}.price_up .index-pr-change{color:#00c984;font-weight:500}.market-dropdown{position:absolute;background-color:#1f1f1f;width:100%;left:0;border-radius:0 0 5px 5px;top:100%}.md-item{color:#fff;font-weight:600;padding:14px 16px}.swiper-wrapper{-webkit-transition-timing-function:linear!important;-o-transition-timing-function:linear!important;transition-timing-function:linear!important}.swiper-slide{width:auto;position:relative;overflow:hidden}
+    .ticker-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-canvas {
+  width: calc((135px * 24) + 2px);
+  /* 
+  200px = minimum width of ticker item before widget script starts removing ticker codes
+  15 = number of ticker codes
+  2px = accounts for 1px external border
+  */
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker-canvas;
+  animation-name: ticker-canvas;
+  -webkit-animation-duration: 75s;
+  animation-duration: 75s;
+}
+.ticker-canvas:hover {
+  animation-play-state: paused
+}
+
+@-webkit-keyframes ticker-canvas {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker-canvas {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.bt-market-index #index-ticker {
+    position: absolute;
+    top: 0;
+    display: table-row;
+    width: 100%;
+    
+}
+.bt-market-index #index-ticker1 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: table-row;
+  width:100%;
+}
+.contanier-index{height:60px;position: relative; width:100%}
+    </style>
+</head>
+<body>
+    <div class="ticker-container">
+    <div id="market-index-ticker" class="bt-market-index ticker-canvas">
+        <div class="contanier-index">
+            <div id="index-ticker"><div class="bt_mi_items swiper-slide"><div class="index_name">NIFTY 50</div><div class="index_price">17,854.05</div><div class="index_change_price green_txt"><strong>243.65</strong> (1.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SENSEX</div><div class="index_price">60,841.88</div><div class="index_change_price green_txt"><strong>909.64</strong> (1.52%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Dow Jones</div><div class="index_price">33,926.01</div><div class="index_change_price red_txt"><strong>-127.93</strong> (-0.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Nikkei 225</div><div class="index_price">27,509.46</div><div class="index_change_price green_txt"><strong>107.41</strong> (0.39%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">USDINR</div><div class="index_price">81.948</div><div class="index_change_price red_txt"><strong>-0.27</strong> (-0.33%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SILVER</div><div class="index_price">67,625</div><div class="index_change_price red_txt"><strong>-2579.00</strong> (-3.67%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">GOLD</div><div class="index_price">56,560</div><div class="index_change_price red_txt"><strong>-1135.00</strong> (-1.97%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">CRUDE OIL</div><div class="index_price">6,112</div><div class="index_change_price red_txt"><strong>-205.00</strong> (-3.25%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">NIFTY 50</div><div class="index_price">17,854.05</div><div class="index_change_price green_txt"><strong>243.65</strong> (1.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SENSEX</div><div class="index_price">60,841.88</div><div class="index_change_price green_txt"><strong>909.64</strong> (1.52%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Dow Jones</div><div class="index_price">33,926.01</div><div class="index_change_price red_txt"><strong>-127.93</strong> (-0.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Nikkei 225</div><div class="index_price">27,509.46</div><div class="index_change_price green_txt"><strong>107.41</strong> (0.39%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">USDINR</div><div class="index_price">81.948</div><div class="index_change_price red_txt"><strong>-0.27</strong> (-0.33%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SILVER</div><div class="index_price">67,625</div><div class="index_change_price red_txt"><strong>-2579.00</strong> (-3.67%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">GOLD</div><div class="index_price">56,560</div><div class="index_change_price red_txt"><strong>-1135.00</strong> (-1.97%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">CRUDE OIL</div><div class="index_price">6,112</div><div class="index_change_price red_txt"><strong>-205.00</strong> (-3.25%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">NIFTY 50</div><div class="index_price">17,854.05</div><div class="index_change_price green_txt"><strong>243.65</strong> (1.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SENSEX</div><div class="index_price">60,841.88</div><div class="index_change_price green_txt"><strong>909.64</strong> (1.52%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Dow Jones</div><div class="index_price">33,926.01</div><div class="index_change_price red_txt"><strong>-127.93</strong> (-0.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Nikkei 225</div><div class="index_price">27,509.46</div><div class="index_change_price green_txt"><strong>107.41</strong> (0.39%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">USDINR</div><div class="index_price">81.948</div><div class="index_change_price red_txt"><strong>-0.27</strong> (-0.33%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SILVER</div><div class="index_price">67,625</div><div class="index_change_price red_txt"><strong>-2579.00</strong> (-3.67%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">GOLD</div><div class="index_price">56,560</div><div class="index_change_price red_txt"><strong>-1135.00</strong> (-1.97%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">CRUDE OIL</div><div class="index_price">6,112</div><div class="index_change_price red_txt"><strong>-205.00</strong> (-3.25%)</div></div> </div>
+            <div id="index-ticker1"><div class="bt_mi_items swiper-slide"><div class="index_name">NIFTY 50</div><div class="index_price">17,854.05</div><div class="index_change_price green_txt"><strong>243.65</strong> (1.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SENSEX</div><div class="index_price">60,841.88</div><div class="index_change_price green_txt"><strong>909.64</strong> (1.52%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Dow Jones</div><div class="index_price">33,926.01</div><div class="index_change_price red_txt"><strong>-127.93</strong> (-0.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Nikkei 225</div><div class="index_price">27,509.46</div><div class="index_change_price green_txt"><strong>107.41</strong> (0.39%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">USDINR</div><div class="index_price">81.948</div><div class="index_change_price red_txt"><strong>-0.27</strong> (-0.33%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SILVER</div><div class="index_price">67,625</div><div class="index_change_price red_txt"><strong>-2579.00</strong> (-3.67%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">GOLD</div><div class="index_price">56,560</div><div class="index_change_price red_txt"><strong>-1135.00</strong> (-1.97%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">CRUDE OIL</div><div class="index_price">6,112</div><div class="index_change_price red_txt"><strong>-205.00</strong> (-3.25%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">NIFTY 50</div><div class="index_price">17,854.05</div><div class="index_change_price green_txt"><strong>243.65</strong> (1.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SENSEX</div><div class="index_price">60,841.88</div><div class="index_change_price green_txt"><strong>909.64</strong> (1.52%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Dow Jones</div><div class="index_price">33,926.01</div><div class="index_change_price red_txt"><strong>-127.93</strong> (-0.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Nikkei 225</div><div class="index_price">27,509.46</div><div class="index_change_price green_txt"><strong>107.41</strong> (0.39%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">USDINR</div><div class="index_price">81.948</div><div class="index_change_price red_txt"><strong>-0.27</strong> (-0.33%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SILVER</div><div class="index_price">67,625</div><div class="index_change_price red_txt"><strong>-2579.00</strong> (-3.67%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">GOLD</div><div class="index_price">56,560</div><div class="index_change_price red_txt"><strong>-1135.00</strong> (-1.97%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">CRUDE OIL</div><div class="index_price">6,112</div><div class="index_change_price red_txt"><strong>-205.00</strong> (-3.25%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">NIFTY 50</div><div class="index_price">17,854.05</div><div class="index_change_price green_txt"><strong>243.65</strong> (1.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SENSEX</div><div class="index_price">60,841.88</div><div class="index_change_price green_txt"><strong>909.64</strong> (1.52%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Dow Jones</div><div class="index_price">33,926.01</div><div class="index_change_price red_txt"><strong>-127.93</strong> (-0.38%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">Nikkei 225</div><div class="index_price">27,509.46</div><div class="index_change_price green_txt"><strong>107.41</strong> (0.39%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">USDINR</div><div class="index_price">81.948</div><div class="index_change_price red_txt"><strong>-0.27</strong> (-0.33%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">SILVER</div><div class="index_price">67,625</div><div class="index_change_price red_txt"><strong>-2579.00</strong> (-3.67%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">GOLD</div><div class="index_price">56,560</div><div class="index_change_price red_txt"><strong>-1135.00</strong> (-1.97%)</div></div> <div class="bt_mi_items swiper-slide"><div class="index_name">CRUDE OIL</div><div class="index_price">6,112</div><div class="index_change_price red_txt"><strong>-205.00</strong> (-3.25%)</div></div> </div>
+          </div>
+    </div>
+</div>
+    <script>
+        var exchange = 'bse';
+        exchange = getQueryVariable('exchange');        
+        var sensexNiftyTickerApi = 'https://marketapi.intoday.in/widget/tvtnindices/view?exchange=indices';
+        function bseNsePriceTicker(widgetType) {
+            let bseNsePriceTickerValue = new XMLHttpRequest();
+            bseNsePriceTickerValue.open("GET", sensexNiftyTickerApi);
+            bseNsePriceTickerValue.onreadystatechange = function () {
+                if (bseNsePriceTickerValue.readyState === XMLHttpRequest.DONE && bseNsePriceTickerValue.status === 200) {
+                    var data = JSON.parse(bseNsePriceTickerValue.responseText);
+                    var bseNseTickerpriceHtml = document.getElementById('index-ticker');
+                    var bseNseTickerpriceHtml1 = document.getElementById('index-ticker1');
+                    var tickerColor = '';
+                    var tickerData = '';
+                    var dataset = data.data;
+                    var responseDataLength = dataset.length;
+                    tickerData = '';
+                    for (let l = 0; l < 3; l++) { 
+                    for (var i = 0; i < responseDataLength; i += 1) {                       
+                        if (data.data[i].net_change < 0) {
+                            tickerColor = "red_txt";
+                        } else if (data.data[i].net_change > 0) {
+                            tickerColor = "green_txt";
+                        } else { }
+                        var compName = data.data[i].alt_name;
+                        var compPrice = parseFloat(data.data[i].close);
+                        var transactionTime = data.data[i].tr_date;
+                        var priceChange = '';
+                        var percentageChange = '';
+                        if (compPrice != '' || compPrice != 'null') {
+                            compPrice = compPrice.toLocaleString();;
+                        }
+                        if (data.data[i].net_change != '' || data.data[i].net_change != 'null') {
+                            priceChange = parseFloat(data.data[i].net_change).toFixed(2);
+                        }
+                        if (data.data[i].per_change != '' || data.data[i].per_change != 'null') {
+                            percentageChange = parseFloat(data.data[i].per_change).toFixed(2);
+                        }
+                        var transactionTimestamp = new Date(transactionTime);
+                        if (i == 0) {
+                            var indexName = 'Sensex';
+                            var indexNameDropdown = 'Nifty';
+                            if (exchange == 'bse') {
+                                indexName = 'Sensex';
+                                indexNameDropdown = 'Nifty';
+                            } else if (exchange == 'nse') {
+                                indexName = 'Nifty';
+                                indexNameDropdown = 'Sensex';
+                            }
+                            //tickerData = tickerData + '<div class="bt_mi_body"><div class="swiper-container swiper--top"><div class="swiper-wrapper">';
+                        }
+                        tickerData = tickerData + '<div class="bt_mi_items swiper-slide"><div class="index_name">' + compName + '</div><div class="index_price">' + compPrice + '</div><div class="index_change_price ' + tickerColor + '"><strong>' + priceChange + '</strong> (' + percentageChange + '%)</div></div> '
+                    }
+                    //tickerData = tickerData + '</div></div></div>';                   
+                    }
+                    bseNseTickerpriceHtml.innerHTML = tickerData;
+                    bseNseTickerpriceHtml1.innerHTML = tickerData;
+                }
+            }
+            bseNsePriceTickerValue.send();
+            setTimeout(function () {
+                bseNsePriceTicker('bse');
+            }, 20000);
+        }
+        window.onload = function () {
+            bseNsePriceTicker('bse');
+        }
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return (false);
+        } 
+    </script>
+  
+
+
+<div class="mainc">
+
+
+  
+     <div class = "container_1">
+     
+      
+               <hr class="new1">
+      
+              
+        <div class ="inside_c1_1">       <!--  first news section inside container1-->
+             <div class="img_c1">
+              <a class="imgc101" href=""><img src="buisnessnewphotos/adani1.jpg" alt="adanijpg"></a>
+             </div>
+
+             <div class="heading_1">
+              <a href="" > <h3>Adani Enterprises says report on hiring Grant Thornton for<br>    independent audit a ‘rumour’</h3></a>
+              
+            <div class ="date">FEBRUARY 16, 2023 13:34 IST </div>
+            
+            <div class ="details">    In a notice to the exchanges, Adani Enterprises in a statement said, "We would like to clarify that the said news item appears to be a market rumour."                 </div>
+
+             </div>
+            
+         </div>
+                   <hr  class ="new2">
+         <div class ="inside_c1_1">       <!--  first news section inside container1-->
+          <div class="img_c1">
+           <a class="imgc101" href=""><img src="buisnessnewphotos/rupee4.jpg" alt="rupeejpg"></a>
+          </div>
+
+          <div class="heading_1">
+           <a href="" > <h3>Rupee gains 13 paise to close at 82.70 against US dollar</h3></a>
+           
+         <div class ="date">FEBRUARY 16, 2023 13:34 IST </div>
+         
+         <div class ="details">   The dollar index, which gauges the greenback's strength against a basket of six currencies, declined 0.21 per cent to 103.70.               </div>
+
+          </div>
+         
+      </div>
+
+      <hr  class ="new2">
+      <div class ="inside_c1_1">       <!--  first news section inside container1-->
+       <div class="img_c1">
+        <a class="imgc101" href=""><img src="buisnessnewphotos/economyindia.jpg" alt="ecomomyinjpg"></a>
+       </div>
+
+       <div class="heading_1">
+        <a href="buisnessnewphotos/economyindia.jpg"> <h3>India’s fuel demand rises sharply, up 18% to 1.22 million tonnes in February</h3></a>
+        
+      <div class ="date">FEBRUARY 16, 2023 13:34 IST </div>
+      
+      <div class ="details">   Month-on-month, the demand was up 13.6 per cent, reversing the dip in the previous month. </div>
+       </div>
+      
+   </div>
+   <hr  class ="new2">
+
+   
+   <div class ="inside_c1_1">       <!--  first news section inside container1-->
+    <div class="img_c1">
+     <a class="imgc101" href=""><img src="buisnessnewphotos/hdfc.jpg" alt="hdfcjpg"></a>
+    </div>
+
+    <div class="heading_1">
+     <a href="" > <h3>In a first, HDFC Bank customers can now link Rupay credit cards to UPI</h3></a>
+     
+   <div class ="date">FEBRUARY 16, 2023 13:34 IST </div>
+   
+   <div class ="details">    From now on, HDFC Bank Rupay credit cards can be linked to a UPI ID enabling a customer to use the credit card on popular payments platforms.               </div>
+
+    </div>
+   
+</div>
+<hr  class ="new2">
+
+<div class ="inside_c1_1">       <!--  first news section inside container1-->
+  <div class="img_c1">
+   <a class="imgc101" href=""><img src="buisnessnewphotos/goyal1.jpg" alt="zomatojpg"></a>
+  </div>
+
+  <div class="heading_1">
+   <a href="" > <h3>Zomato’s Deepinder Goyal announces rest points for delivery partners; what it means</h3></a>
+   
+ <div class ="date" style ="margin-top: 4px;">FEBRUARY 16, 2023 13:34 IST </div>
+ 
+ <div class ="details"  style="margin-top: 4px;">   Deepinder Goyal said that Zomato is aware how tough  job of delivery partners is but doesn't have a public infrastructure in place yet which can help them do their jobs better.</div>
+  </div>
+ 
+</div>
+        <hr  class ="new2">
+
+        <div class ="inside_c1_1">       <!--  first news section inside container1-->
+          <div class="img_c1">
+           <a class="imgc101" href=""><img src="buisnessnewphotos/wipro.webp" alt="wiprojpg" style="height: 150px; width: 300px;"></a>
+          </div>
+
+          <div class="heading_1">
+           <a href="" > <h3> Wipro to roll out 87% variable pay to employees in Q3FY23</h3></a>
+           
+         <div class ="date">FEBRUARY 16, 2023 13:34 IST </div>
+         
+         <div class ="details">    The variable pay for the December-ended quarter at Wipro would be rolled out with February month’s salary, the internal communication highlighted.               </div>
+
+          </div>
+         
+      </div>
+
+      <hr  class ="new2">
+
+      <div class ="inside_c1_1">       <!--  first news section inside container1-->
+        <div class="img_c1">
+         <a class="imgc101" href=""><img src="buisnessnewphotos/indianoil.jpg" alt="indianoiljpg"></a>
+        </div>
+      
+        <div class="heading_1">
+         <a href="" > <h3>IOC contradicts Adani after TMC’s Mahua Moitra raises stink of corruption in LPG deal</h3></a>
+         
+       <div class ="date" style ="margin-top: 4px;">FEBRUARY 16, 2023 13:34 IST </div>
+       
+       <div class ="details"  style="margin-top: 4px;"> IOC currently uses state-run Visakhapatnam or Vizag Port, located adjacent to Gangavaram port, to import some 7-8 lakh tonnes of LPG annually. </div>
+        </div>
+       
+      </div>
+              <hr  class ="new2">
+
+              <div class ="inside_c1_1">       <!--  first news section inside container1-->
+                <div class="img_c1">
+                 <a class="imgc101" href=""><img src="buisnessnewphotos/AirIndia.jpg" alt="airindiajpg"></a>
+                </div>
+              
+                <div class="heading_1">
+                 <a href="" > <h3>Air India will require more than 6,500 pilots for 470 planes: Report</h3></a>
+                 
+               <div class ="date" style ="margin-top: 4px;">FEBRUARY 16, 2023 13:34 IST </div>
+               
+               <div class ="details"  style="margin-top: 4px;"> Air India, Air India Express, Vistara and AirAsia India together have little over 3,000 pilots to operate the combined fleet of 220 aircraft.</div>
+                </div>
+               
+              </div>
+                      <hr  class ="new2">
+
+                
+   
+      </div>
+
+
+
+     <div class = "container_2">
+     
+     <div class ="marketlogo">
+     <img src ="buisnessnewphotos/market-today.png" alt = "market today" >
+
+     </div>
+
+     <div class ="c2_sections">
+      <a href=""> <h3> Wipro, KPIT Tech, Tata Elxsi, Birlasoft, Brightcom: IT stocks that MFs bought & sold in Jan  </h3> </a>
+
+     </div>
+     <br>
+
+     <hr  class ="new2">
+
+     <div class ="c2_sections">
+      <a href=" "><h3>   Adani group considers up to $1.5 billion privately placed bond offerings: Report  </h3> </a>
+
+     </div>
+     <br>
+
+     <hr  class ="new2">
+
+     <div class ="c2_sections">
+     <a href=" "> <h3>     IndiGo block deal: Co-promoter Rakesh Gangwal's wife likely sold 4% stake; stock slips 5% </h3> </a>
+ 
+      </div>
+      <br>
+ 
+      <hr  class ="new2">
+
+      <div class ="c2_sections">
+       <a href=" " > <h3>    PI Industries shares jump 9% after Q3 results; can they re-test 52-week high level? </h3> </a>
+   
+        </div>
+        <br>
+   
+        <hr  class ="new2">
+        <div class ="c2_sections">
+          <a href= " "><h3>      Sealmatic India IPO opens on February 17; check price band, GMP & other key details </h3>  </a>
+     
+          </div>
+          <br>
+     
+          <hr  class ="new2">
+
+          <div class ="c2_sections">
+          <a href=" "><h3> Sensex, Nifty log mild gains; Bharat Dynamics, ONGC, TechM surge up to 13%</h3>  </a>
+       
+            </div>
+            <br>
+       
+            <hr  class ="new2">
+
+            <div class ="c2_sections">
+              <a href=" "><h3> ITC stock rises 160% in 3 years, market cap inches closer to Rs 5 lakh crore  </h3>  </a>
+           
+                </div>
+                <br>
+           
+                <hr  class ="new2">
+
+                <div class ="c2_sections">
+                  <a href=" "><h3>Adani Ports, Adani Wilmar: 2 Adani group stocks to buy post selloff</h3>  </a>
+               
+                    </div>
+                    <br>
+               
+                    <hr  class ="new1">
+
+
+                    <div class="c2stocksheading">
+                      <img src="buisnessnewphotos/mosttradedstokes.png" alt="mosttradedstokes">
+                     
+                    </div>
+                    
+
+                    <div class="c2stocks">
+                     <div class="c2stockslogo">
+                      <a href="">
+                      <img src="buisnessnewphotos/ITClogo.png"alt="ITClogo">
+                     </div>
+                     <div class="c2stockstext">
+                      <h4>ITC Ltd  </h4>
+                      <h5> ₹383.65 <span style="color:green ;margin-left:5px;">1.30  (0.34%)</span>  </h5>
+                    </a>
+                     </div>
+                      
+
+                    </div>
+                    <hr class="new2">
+
+                    <div class="c2stocks">
+                      <div class="c2stockslogo">
+                        <a href="">
+                       <img src="buisnessnewphotos/axislogo.png"alt="axislogo">
+                      </div>
+                      <div class="c2stockstext">
+                       <h4>Axis Bank Ltd  </h4>
+                       <h5> ₹862.50 <span style="color:red;margin-left:5px;">-2.65  (-0.31%)</span>  </h5>
+                      </a>
+                      </div>
+                       
+ 
+                     </div>
+                     <hr class="new2">
+                     <div class="c2stocks">
+                      <div class="c2stockslogo">
+                        <a href="">
+                       <img src="buisnessnewphotos/TataMotorslogo.png"alt="tatamoterslogo">
+                      </div>
+                      <div class="c2stockstext">
+                       <h4>Tata Moters Ltd</h4>
+                       <h5> ₹440.70<span style="color:red;margin-left:5px;">0.85   (-0.19%)</span>  </h5>
+                       </a>
+                      </div>
+                       
+ 
+                     </div>
+                     <hr class="new2">
+                     <div class="c2stocks">
+                      <div class="c2stockslogo">
+                        <a href="">
+                       <img src="buisnessnewphotos/TataMotorslogo.png"alt="TataSteellogo">
+                      </div>
+                      <div class="c2stockstext">
+                       <h4>Tata Steel Ltd </h4>
+                       <h5> ₹112.80<span style="color:green;margin-left:5px;"> 0.80   (0.71%)</span>  </h5>
+                      </a>
+                      </div>
+                       
+ 
+                     </div>
+                     <hr class="new2">
+                     <div class="c2stocks">
+                      <div class="c2stockslogo">
+                        <a href="">
+                       <img src="buisnessnewphotos/mahindralogo.png"alt="mahindralogo">
+                      </div>
+                      <div class="c2stockstext">
+                       <h4>Mahindra & Mahindra Ltd</h4>
+                       <h5> ₹1,357.15  <span style="color:red ;margin-left:5px;">-1.30   (0.78%)</span>  </h5>
+                      </a>
+                      </div>
+                       
+ 
+                     </div>
+                     <hr class="new2">
+
+                    
+                    <div class="c2stocks">
+                     <div class="c2stockslogo">
+                      <a href="">
+                      <img src="buisnessnewphotos/ITClogo.png"alt="ITClogo">
+                     </div>
+                     <div class="c2stockstext">
+                      <h4>ITC Ltd  </h4>
+                      <h5> ₹383.65 <span style="color:green ;margin-left:5px;">1.30    (0.34%)</span>  </h5>
+                    </a>
+                     </div>
+                      
+
+                    </div>
+                    <hr class="new2">
+     
+
+     </div>
+
+     
+     </div>
+
+
+</div>
+
+           
+
+            <div class=" cryptologo">
+
+              <img src="buisnessnewphotos/crypto.png" alt="cryptologo">
+
+            </div>
+  
+          <div class="mainsecond">
+
+                       <div class=" mainsecond1"  >
+                                    <div class="cryptomacf">
+                                      
+                                      <img src="buisnessnewphotos/bitcoin.webp" alt="bitcoinwebp">
+
+                                      <div class="cryptotext">
+                                        <h4>  Bitcoin </h4>
+                                      </div>
+                                      <div class="cryptotext2 ">
+                                        <h4>₹20,40,000.00 </h4>
+                                        <h4><span style="color:red">(-0.767%)  </span>    </h4>
+                                      </div>
+                                </div>
+                                    <hr class="new2">
+
+                                    <div class="cryptomacf">
+                                      
+                                      <img src="buisnessnewphotos/solana.png" alt="bitcoinwebp">
+
+                                      <div class="cryptotext">
+                                        <h4>  Solana </h4>
+                                      </div>
+                                      <div class="cryptotext2 ">
+                                        <h4>₹1,926.12</h4>
+                                        <h4><span style="color:red">(-2.52%) </span>    </h4>
+                                      </div>
+                                </div>
+                                    <hr class="new2">
+                                    <div class="cryptomacf">
+                                      
+                                      <img src="buisnessnewphotos/USDC.png" alt="bitcoinwebp">
+
+                                      <div class="cryptotext">
+                                        <h4>  USDCoin </h4>
+                                      </div>
+                                      <div class="cryptotext2 ">
+                                        <h4>₹86.30</h4>
+                                        <h4><span style="color:red">(-0.196%)  </span>    </h4>
+                                      </div>
+                                </div>
+                                    <hr class="new2">
+                                    <div class="cryptomacf">
+                                      
+                                      <img src="buisnessnewphotos/cardano.png" alt="bitcoinwebp">
+
+                                      <div class="cryptotext">
+                                        <h4>  Cardano </h4>
+                                      </div>
+                                      <div class="cryptotext2 ">
+                                        <h4>₹33.12</h4>
+                                        <h4><span style="color:red">(-2.731%)  </span>    </h4>
+                                      </div>
+                                </div>
+                                    <hr class="new2">
+                                    <div class="cryptomacf">
+                                      
+                                      <img src="buisnessnewphotos/ripple.webp" alt="bitcoinwebp">
+
+                                      <div class="cryptotext">
+                                        <h4>  Ripple </h4>
+                                      </div>
+                                      <div class="cryptotext2 ">
+                                        <h4>₹33.54</h4>
+                                        <h4><span style="color:red">(-1.958%) </span>    </h4>
+                                      </div>
+                                </div>
+                                    <hr class="new2">
+                       </div>
+
+                       <div class="mainsecond2">
+                      
+                        
+
+                        <div class ="ms21">
+                           <h3> <a href="">  Crypto Price Today: Bitcoin below $24,000; Shiba Inu, Avalanche, Solana drop 5% each.   </a>    </h3>
+                          <a href="">   <img src="buisnessnewphotos/bitcoinbig.jpg"alt="bitcoin"> </a>
+                        </div>
+                        <hr class="new3">
+                        <div class ="ms22">
+                          
+                          <a href=""><img src="buisnessnewphotos/cryptocoin.jpg"alt="bitcoin"></a>
+                           <div class="p1"><a href="">Crypto Price Today: Bitcoin below $24,000; Shiba Inu, Avalanche, Solana drop 5% each. </a>        </div>
+                        </div>
+                        <hr class="new3">
+                        <div class ="ms22">
+                         
+                          <a href=""><img src="buisnessnewphotos/cryptos.jpg"alt="bitcoin"> </a> 
+                           <div class="p1"><a href=""> Crypto Price Today: Bitcoin below $24,000; Shiba Inu, Avalanche, Solana drop 5% each.    </a>   </div>
+                        </div>
+                        <hr class="new3">
+                        <div class ="ms22">
+                          
+                          <a href=""> <img src="buisnessnewphotos/crypto1.jpg"alt="bitcoin"> </a>
+                           <div class="p1"> <a href=""> Crypto Price Today: Bitcoin below $24,000; Shiba Inu, Avalanche, Solana drop 5% each. </a>       </div>
+                        </div>
+
+                       </div>
+           </div>
+
+           <div class = "mainthird">
+
+           <hr class = "news4">
+           <h3>  Jobs  </h3>
+           </div>
+
+           <div class="mainfour ">
+           
+
+       <div class ="insidefour">
+              <div class="insidefour_img">
+             <a href=" " >
+           <img src="buisnessnewphotos/yahoo.avif"alt="yahooimg">       </a>
+              </div>
+            <div class="insidefour_text"> <a href="">Tech layoffs: Yahoo to lay off 20% of its staff as it aims to restructure ad tech division. Yahoo layoffs will impact nearly half of the ad tech employees by the end of the year, including nearly 1,000 employees this week.    </a>                     </div>
+
+        </div>
+        <hr class="new2">
+        
+
+
+            <div class ="insidefour">
+              <div class="insidefour_img">
+                <a href=" " >
+           <img src="buisnessnewphotos/management.avif" alt="managementimg">  </a>
+              </div>
+              <div class="insidefour_text"> <a href=" ">Management, software development, sales, Java among most in-demand skills in India: LinkedIn The LinkedIn report added that professionals have become more motivated to learn as skilling is driving 
+                hiring, development, and retention of talent. </a>
+                
+              </div>
+             
+              </div>
+              <hr class="new2">
+
+              <div class ="insidefour">
+                <div class="insidefour_img">
+                  <a href=" " >
+                <img src="buisnessnewphotos/boing.avif"alt="boingimg"> </a> </div>
+                <div class="insidefour_text"> <a href=" " >Boeing to slash about 2,000 white-collar jobs in finance and HR. Last month, the Virginia-based company announced it would hire 10,000 workers in 2023, but some support positions would be cut.                         </div>
+                </a>
+                </div>
+               
+                <hr class="new2">  
+                
+                
+                <div class ="insidefour">
+                  <div class="insidefour_img">
+                    <a href=" " >
+                  <img src="buisnessnewphotos/blue.avif"alt="blueimg"> </a>  </div>
+                  <div class="insidefour_text"> <a href=" " >Blue-collar jobs get push in FM Sitharaman’s 33% capex boost in Budget 2023. overnment targets long-term job creation with 33% capex boost in the Union Budget for 2023-24 in a country where at least 10 million people enter the labour market every year.                      </div>
+                  </a>
+                  </div>
+                     
+
+                  <hr class="new2">
+
+
+                  <div class ="insidefour">
+                    <div class="insidefour_img">
+                      <a href=" " >
+                     <img src="buisnessnewphotos/economicsurvey.avif"alt="economicsurveymg"> </a>  </div>
+                    <div class="insidefour_text"> <a href=" " > Economic Survey 2023: Labour market recovered beyond pre-COVID levels; female participation improved.  Economic Survey 2023: EPFO payroll has also seen a steady net addition, with the majority share coming from the youth.                        </div>
+                    </a>
+                    </div>
+                   
+           </div>
+           <br>
+           
+                          
+
+                          <br>
+
+          <footer>
+            
+ <div class="footer_1">
+
+  <div class = "f11">
+ 
+    <h2>  News Website.in </h2>
+    <br>
+    
+        <div class = "f111">
+          Contact us: feedback@buisnessnews.in
+       </div>
+<br><br>
+       <div class="f112">
+        
+       <a href="" >About </a> <a href="">Contact </a> <a href="">Advertise </a> <a href=" " >Private-Policy     </a>
+      
+       </div>
+    </div>
+
+    
+
+  
+
+  <div class="f22">
+
+     <h4> Follow us</h4>
+     <br>
+     <br>
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+     <a href="#" class="fa fa-youtube"></a>
+    </div>
+
+
+
+ </div>
+         </footer>
+
+        
+        <!--HTML figcaption tag ends here-->
+
+
+
+
+</body></html>
